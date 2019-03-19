@@ -1,0 +1,199 @@
+
+
+OPERATOR
+
+== ADITION ==//
+var previous = 200;
+var current = 100;
+var total = ' The total is: ' + (previous + current);
+current += previous;
+
+
+var username = 'James';
+var message = 'Welcome back ' + username;
+
+console.log(message);
+
+// == SUBSTRACTION == //
+
+var total = 'total amout is: ' + ( previous - current );
+var message = 'Welcome back' - username;
+
+console.log(message);
+
+// COMPARISON 
+
+var x = 10;
+var y = 10;
+
+var result = x == y ? 'Equal' : 'Not equal';
+console.log(result);
+
+FOR LOOP
+
+var x = 0;
+
+for(x; x <= 5; x++){
+    console.log('This is iteration number ' + x)
+}
+
+for(var x = 0; x <= 5; x++){
+    for(var j = 0; j <= 5; j++){
+        console.log('First loop: ' + x + ' - IL:' + j)
+    }
+}
+
+for(var i = 1; i <= 5; i++){
+    if(i == 2){
+        continue;
+    }
+    console.log(i);
+}
+
+var user = ['james', 'Brain', 'Tomas']
+
+for(var i = 0; i < user.length; i++){
+    console.log(user[i]);
+}
+
+WHILE LOOP
+
+var x = 2;
+while(x <= 5){
+    console.log(x);
+
+    x++;
+}
+
+FUNCTION
+
+function cals(a,b){
+    var sum = a + b;
+    return sum;
+}
+
+var other = cals(5,5);
+var result = cals('Hello ', 'Wolrd');
+
+
+console.log(result);
+console.log(other);
+
+WORKOUT
+
+var name = 'Maks';
+var lastname = ' Yakubov';
+var age = 35;
+var habbit = ['Javascript', 'CSS', 'React']
+var parents = {
+    father: 'Daddy',
+    mother: ' Mommy'
+}
+
+var message = 'Hello my name is ' + name + '' + lastname + ' and I am ' + age + ' years old. 
+My abilities are:' + habbit[0] + ', ' + habbit[1] + ', ' + habbit[2] + '. 
+My parents are ' + parents.father + ' and' + parents.mother + '.' ;
+console.log(message);
+
+
+
+// ANOTHER WORKOUT
+var os = 'Windows';
+var type = 'dddfdfd';
+var value = 1500;
+
+if(os === 'Mac'){
+    console.log('Incredible Mac');
+} else {
+    console.log('Super Windows')
+}
+
+if(type === 'Decktop'){
+    console.log("It\'s a Desctop");
+} else if(type === 'All in One') {
+    console.log('It is All in One')
+} else if(type === 'Laptop'){
+    console.log('It is a Laptop')
+} else{
+    console.log('It is computer')
+}
+
+switch (value) {
+    case 100:
+        console.log('The price is amazing $'+ value +', awesome discount')
+        break;
+    case 300:
+        console.log('The price is high $'+ value +',last week was $100')
+        break;
+    case 200:
+        console.log('We can buy it for $200')
+        break;
+    default:
+        console.log('The price is $'+ value )
+        break;
+}
+
+
+ANOTHER WORKOUT
+var user = ['Raymond', 'George'];
+var price = [20,12,5];
+var products = ['Potatoes', 'Apples', 'Lemmons'];
+
+for(var i = 0; i < user.length; i++){
+    if (user[i] === 'Raymond') {
+        console.log(user[i] + ' bought:');
+        for (var x = 0; x < products.length; x++) {
+            console.log('.' + products[x] + ' = $' + (price[x] -3));
+        }
+    } else {
+        console.log(user[i] + ' bought:');
+        for (var x = 0; x < products.length; x++) {
+            console.log('.' + products[x] + ' = $' + price[x]);
+        }
+    }
+}
+
+
+var player = ['Bobby', 'Tommy'];
+var cost = [14, 25, 92];
+var items = ['Laptop', 'PS', 'Desctop'];
+
+for (var i = 0; i <= player.length; i++){
+    if(player[i] === 'Bobby'){
+        console.log(player[i] + ' got:');
+        for(var x = 0; x <= player.length; x++){
+            console.log('.' + items[x] + ' = $' + (cost[x] - 5));
+        }
+    } else {
+        console.log(player[i] + ' got:');
+        for(var x = 0; x <= player.length; x++){
+            console.log('.' + items[x] + ' = $' + (cost[x] ));
+    }
+  }
+}
+
+ANOTHER WORKOUT
+
+var servers = [true,true,true,true,false];
+
+function message(number){
+    console.log('Server ' + number + '.Running...')
+}
+function restart(number){
+    servers[number] = true;
+    message(number)
+}
+
+for(var i = 0; i < servers.length; i++){
+
+    if(servers[i]){
+        message(i);
+    } else{
+        console.log('Server' + i + ', down.Restarting...')
+        restart(i);
+    }
+
+}
+
+
+
